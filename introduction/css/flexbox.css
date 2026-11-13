@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    text-align: left;
 }
 
 .site-wrapper {
@@ -15,30 +16,14 @@ body {
     padding: 40px 20px;
 }
 
+h1, h2, h3, p, span, li, div {
+    color: #ffffff;
+    text-align: left;
+}
+
 h1, h2 {
-    color: #f2f2f2;
     border-bottom: 1px solid #222222;
     padding-bottom: 8px;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-
-.container div {
-    background-color: #121212;
-    color: #ffffff;
-    border: 1px solid #222222;
-    padding: 20px;
-    flex: 1 1 80px;
-    text-align: center;
-    border-radius: 6px;
-    font-size: 1.2rem;
-    font-weight: bold;
 }
 
 .hero-section, .content-section {
@@ -72,12 +57,10 @@ h1, h2 {
     padding: 4px 10px;
     border-radius: 4px;
     font-size: 0.85rem;
-    color: #aaaaaa;
     margin-top: 5px;
 }
 
 .highlight {
-    color: #4da6ff;
     font-weight: bold;
     margin-top: 10px;
 }
@@ -89,7 +72,7 @@ h1, h2 {
     padding: 12px 20px;
     flex: 1 1 200px;
     font-size: 0.95rem;
-    text-align: center;
+    text-align: left;
 }
 
 .goals-list {
@@ -105,7 +88,7 @@ h1, h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .gallery-flex img {
