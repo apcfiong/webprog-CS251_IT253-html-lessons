@@ -1,105 +1,154 @@
 body {
-    background-color: #000000;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #f4f7fb;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    text-align: left;
+    color: #333;
 }
 
-.site-wrapper {
+#header {
+    background-image: 
+        linear-gradient(
+            rgba(30, 30, 30, 0.6), 
+            rgba(30, 30, 30, 0.6)
+        ), 
+        url('https://i.pinimg.com/originals/5a/81/2f/5a812f154a0375a19fede60868393347.gif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+#header h1 {
+    margin: 0 0 10px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#header p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #e2e8f0;
+}
+
+.container {
+    width: 85%;
+    max-width: 950px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    gap: 30px;
 }
 
-h1, h2, h3, p, span, li, div {
-    color: #ffffff;
-    text-align: left;
+.section {
+    display: flex;
+    flex-direction: column;
 }
 
-h1, h2 {
-    border-bottom: 1px solid #222222;
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #e2e8f0;
     padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
 }
 
-.hero-section, .content-section {
+p, li {
+    line-height: 1.7;
+    color: #4a5568;
+    margin: 0 0 10px 0;
+}
+
+/* Flexbox Layouts for Content */
+.card-grid {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.about-card, .flex-card {
-    background-color: #111111;
-    border: 1px solid #222222;
+.card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
     border-radius: 8px;
     padding: 20px;
     flex: 1 1 280px;
 }
 
-.about-card {
-    margin-bottom: 0;
-}
-
-.flex-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.full-width {
-    flex: 1 1 100%;
+.card h3 {
+    margin-top: 0;
+    color: #2d3748;
+    font-size: 1.1rem;
 }
 
 .badge {
     display: inline-block;
-    background-color: #1f1f1f;
-    border: 1px solid #333333;
-    padding: 4px 10px;
+    background-color: #e2e8f0;
+    color: #4a5568;
+    padding: 3px 10px;
     border-radius: 4px;
     font-size: 0.85rem;
-    margin-top: 5px;
+    font-weight: 600;
+    margin-top: 8px;
 }
 
 .highlight {
-    color: #ffffff;
-    font-weight: bold;
+    color: #3182ce;
+    font-weight: 600;
     margin-top: 10px;
 }
 
-.pill-card {
-    background-color: #111111;
-    border: 1px solid #222222;
-    border-radius: 6px;
-    padding: 12px 20px;
+.pill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pill {
+    background-color: #edf2f7;
+    border: 1px solid #e2e8f0;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #2d3748;
     flex: 1 1 200px;
-    font-size: 0.95rem;
-    text-align: left;
 }
 
 .goals-list {
-    margin: 0;
     padding-left: 20px;
+    margin: 0;
 }
 
 .goals-list li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
-.gallery-flex {
+.gallery-container {
     display: flex;
+    gap: 15px;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: flex-start;
+    margin-top: 5px;
 }
 
-.gallery-flex img {
-    flex: 1 1 280px;
-    height: 350px;
+.gallery-container img {
+    flex: 1 1 260px;
+    height: 180px;
     object-fit: cover;
     border-radius: 8px;
-    border: 1px solid #222222;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
 }
