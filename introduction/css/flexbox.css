@@ -3,18 +3,22 @@ body {
     color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 40px;
+    padding: 0;
     line-height: 1.6;
+}
+
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
 h1, h2 {
     color: #f2f2f2;
     border-bottom: 1px solid #222222;
     padding-bottom: 8px;
-}
-
-.section {
-    margin-bottom: 40px;
 }
 
 .container {
@@ -37,66 +41,75 @@ h1, h2 {
     font-weight: bold;
 }
 
-.card-grid {
+.hero-section, .content-section {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 30px;
 }
 
-.card {
+.about-card, .flex-card {
     background-color: #111111;
     border: 1px solid #222222;
-    padding: 20px;
     border-radius: 8px;
+    padding: 20px;
     flex: 1 1 280px;
 }
 
-.card h3 {
-    margin-top: 0;
-    color: #ffffff;
-}
-
-.meta {
-    color: #888888;
-    font-size: 0.9rem;
-}
-
-.achievement {
-    color: #4da6ff;
-    font-weight: bold;
-}
-
-.tag-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.tag {
-    background-color: #111111;
-    border: 1px solid #222222;
-    padding: 12px 18px;
-    border-radius: 6px;
-    font-size: 0.95rem;
-    flex: 1 1 200px;
-}
-
-.goals-list {
-    background-color: #111111;
-    border: 1px solid #222222;
-    padding: 20px 40px;
-    border-radius: 8px;
-}
-
-.gallery {
+.flex-row {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.gallery img {
-    flex: 1 1 300px;
-    max-width: 100%;
+.full-width {
+    flex: 1 1 100%;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #1f1f1f;
+    border: 1px solid #333333;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: #aaaaaa;
+    margin-top: 5px;
+}
+
+.highlight {
+    color: #4da6ff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.pill-card {
+    background-color: #111111;
+    border: 1px solid #222222;
+    border-radius: 6px;
+    padding: 12px 20px;
+    flex: 1 1 200px;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.goals-list {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.goals-list li {
+    margin-bottom: 10px;
+}
+
+.gallery-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.gallery-flex img {
+    flex: 1 1 280px;
     height: 350px;
     object-fit: cover;
     border-radius: 8px;
