@@ -9,8 +9,12 @@ body {
 
 h1, h2 {
     color: #f2f2f2;
-    border-bottom: 1px solid #333333;
-    padding-bottom: 5px;
+    border-bottom: 1px solid #222222;
+    padding-bottom: 8px;
+}
+
+.section {
+    margin-bottom: 40px;
 }
 
 .container {
@@ -24,13 +28,64 @@ h1, h2 {
 .container div {
     background-color: #121212;
     color: #ffffff;
-    border: 1px solid #2a2a2a;
+    border: 1px solid #222222;
     padding: 20px;
     flex: 1 1 80px;
     text-align: center;
     border-radius: 6px;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.card-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #111111;
+    border: 1px solid #222222;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 280px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.meta {
+    color: #888888;
+    font-size: 0.9rem;
+}
+
+.achievement {
+    color: #4da6ff;
+    font-weight: bold;
+}
+
+.tag-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tag {
+    background-color: #111111;
+    border: 1px solid #222222;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    flex: 1 1 200px;
+}
+
+.goals-list {
+    background-color: #111111;
+    border: 1px solid #222222;
+    padding: 20px 40px;
+    border-radius: 8px;
 }
 
 .gallery {
@@ -40,9 +95,10 @@ h1, h2 {
 }
 
 .gallery img {
+    flex: 1 1 300px;
     max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    border: 1px solid #2a2a2a;
+    height: 350px;
     object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #222222;
 }
