@@ -1,6 +1,7 @@
 .container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: max-content;
     background-color: rgb(255, 191, 30);
     padding: 5px;
     gap: 5px;
@@ -12,7 +13,6 @@
     padding: 10px;
     font-size: 16px;
     text-align: left;
-    align-self: start;
 }
 
 h1 {
@@ -39,7 +39,8 @@ p, ul, ol, li {
 
 .gallery-row img {
     width: 50%;
-    height: auto;
+    height: 100px;
+    object-fit: cover;
     display: block;
     border-radius: 4px;
 }
