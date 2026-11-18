@@ -49,7 +49,7 @@
 }
 
 h2 {
-    color: #2c3e50;
+    color: #000000;
     border-bottom: 2px solid #e2e8f0;
     padding-bottom: 8px;
     margin-top: 0;
@@ -59,7 +59,7 @@ h2 {
 
 p, li {
     line-height: 1.7;
-    color: #4a5568;
+    color: #000000;
     margin: 0 0 10px 0;
 }
 
@@ -79,14 +79,14 @@ p, li {
 
 .card h3 {
     margin-top: 0;
-    color: #2d3748;
+    color: #000000;
     font-size: 1.1rem;
 }
 
 .badge {
     display: inline-block;
     background-color: #e2e8f0;
-    color: #4a5568;
+    color: #000000;
     padding: 3px 10px;
     border-radius: 4px;
     font-size: 0.85rem;
@@ -95,7 +95,7 @@ p, li {
 }
 
 .highlight {
-    color: #2c3e50;
+    color: #000000;
     font-weight: 600;
     margin-top: 10px;
 }
@@ -112,7 +112,7 @@ p, li {
     padding: 8px 14px;
     border-radius: 20px;
     font-size: 0.9rem;
-    color: #2d3748;
+    color: #000000;
 }
 
 .goals-list {
