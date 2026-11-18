@@ -1,28 +1,84 @@
-.gallery-container {
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+#header {
+    background-image: 
+        linear-gradient(
+            rgba(30, 30, 30, 0.6), 
+            rgba(30, 30, 30, 0.6)
+        ), 
+        url('https://i.pinimg.com/originals/5a/81/2f/5a812f154a0375a19fede60868393347.gif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+#header h1 {
+    margin: 0 0 10px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#header p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #e2e8f0;
+}
+
+.container {
+    width: 85%;
+    max-width: 950px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-top: 10px;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.gallery-container img {
-    flex: 1 1 30%;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 6px;
-    display: block;
-}
-
-.pill-grid {
+.section {
     display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 10px;
+    flex-direction: column;
 }
 
-.pill {
-    background-color: #edf2f7;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 0.85rem;
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
 }
+
+p, li {
+    line-height: 1.7;
+    color: #4a5568;
+    margin: 0 0 10px 0;
+}
+
+/* Card Layouts using Flexbox */
+.card-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 280px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #2d3
