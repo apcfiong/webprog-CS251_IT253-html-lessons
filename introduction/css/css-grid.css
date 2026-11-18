@@ -9,7 +9,7 @@
 
 .container div {
     background-color: #f1f1f1;
-    padding: 10px;
+    padding: 15px;
     font-size: 16px;
 }
 
@@ -20,17 +20,18 @@ h1 {
 
 h2 {
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
-.gallery-row {
+.gallery {
     display: flex;
     gap: 5px;
     margin-top: 10px;
 }
 
-.gallery-row img {
-    width: 33.33%;
+.gallery img {
+    flex: 1;
+    width: 0;
     height: 100px;
     object-fit: cover;
     display: block;
