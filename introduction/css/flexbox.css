@@ -1,11 +1,11 @@
-.gallery {
+.gallery-container {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
     margin-top: 10px;
 }
 
-.gallery img {
+.gallery-container img {
     flex: 1 1 30%;
     height: 110px;
     object-fit: cover;
