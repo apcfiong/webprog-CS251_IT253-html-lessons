@@ -66,7 +66,6 @@ p, li {
     margin: 0 0 10px 0;
 }
 
-/* Flexbox Layouts for Content */
 .card-grid {
     display: flex;
     gap: 20px;
